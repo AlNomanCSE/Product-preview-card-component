@@ -30,7 +30,8 @@ body {
   background-position: center;
   height: 300px;
 }
-svg,img {
+svg,
+img {
   max-width: 100%;
   display: block;
 }
@@ -91,8 +92,8 @@ p {
   align-items: center;
   gap: 1rem;
 }
-.btn p{
-    color: var(--White);
+.btn p {
+  color: var(--White);
 }
 @media screen and (width>=900px) {
   .card {
@@ -103,9 +104,9 @@ p {
     background-image: url("./images/image-product-desktop.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: left;
+    background-position: center;
     width: 720px;
-    height: 80vh;
+    height: 1640px;
   }
   .details {
     width: 720px;
@@ -115,22 +116,22 @@ p {
 
   .type {
     font-size: 2rem;
-    letter-spacing: .5rem;
+    letter-spacing: 0.5rem;
   }
-  .title{
-    font-size: 6rem;
-    line-height: .9;
+  .title {
+    font-size: 7rem;
+    line-height: 0.9;
   }
-  p{
-    font-size: 2rem;
+  p {
+    font-size: 3rem;
   }
-  .offrerPrice{
-    font-size: 6rem;
+  .offrerPrice {
+    font-size: 7rem;
   }
-  .btn{
+  .btn {
     padding: 2rem;
   }
-  .btn img{
+  .btn img {
     width: 2rem;
   }
 }
