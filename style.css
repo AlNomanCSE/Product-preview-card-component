@@ -1,0 +1,136 @@
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+:root {
+  --font1: "Fraunces", serif;
+  --font2: "Montserrat", sans-serif;
+
+  /* primary */
+  --DarkCyan: hsl(158, 36%, 37%);
+  --Cream: hsl(30, 38%, 92%);
+  /* natural */
+  --Very_dark_blue: hsl(212, 21%, 14%);
+  --Dark_grayish_blue: hsl(228, 12%, 48%);
+  --White: hsl(0, 0%, 100%);
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font1);
+  font-size: 1.125rem;
+  background-color: var(--Cream);
+  line-height: 1.6;
+}
+.image {
+  background-image: url("./images/image-product-mobile.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 300px;
+}
+svg,img {
+  max-width: 100%;
+  display: block;
+}
+p {
+  font-size: 14px;
+  font-family: var(--font2);
+  color: var(--Dark_grayish_blue);
+  font-weight: 500;
+}
+.card {
+  width: 375px;
+  height: 100%;
+  background-color: var(--White);
+  overflow: hidden;
+  border-radius: 10px;
+  margin: 3rem auto;
+}
+.type {
+  font-family: var(--font2);
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  color: var(--Dark_grayish_blue);
+  font-size: 14px;
+}
+.title {
+  line-height: 1.1;
+}
+.offrerPrice {
+  color: var(--DarkCyan);
+}
+.mainPrice {
+  text-decoration: line-through;
+}
+
+.btn {
+  background-color: var(--DarkCyan);
+  border: none;
+  color: var(--White);
+  font-size: 1rem;
+  font-weight: 600;
+  font-family: var(--font2);
+  border-radius: 10px;
+  padding: 0.8rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 0.5rem;
+}
+.details {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+  padding: 1rem;
+}
+.price {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem;
+}
+.btn p{
+    color: var(--White);
+}
+@media screen and (width>=900px) {
+  .card {
+    width: 1440px;
+    display: flex;
+  }
+  .image {
+    background-image: url("./images/image-product-desktop.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: left;
+    width: 720px;
+    height: 80vh;
+  }
+  .details {
+    width: 720px;
+    padding: 5rem;
+    gap: 2rem;
+  }
+
+  .type {
+    font-size: 2rem;
+    letter-spacing: .5rem;
+  }
+  .title{
+    font-size: 6rem;
+    line-height: .9;
+  }
+  p{
+    font-size: 2rem;
+  }
+  .offrerPrice{
+    font-size: 6rem;
+  }
+  .btn{
+    padding: 2rem;
+  }
+  .btn img{
+    width: 2rem;
+  }
+}
