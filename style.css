@@ -95,7 +95,7 @@ p {
 .btn p {
   color: var(--White);
 }
-@media screen and (width>=1440px) {
+@media screen and (width>=1000px) {
   .card {
     width: 1440px;
     display: flex;
